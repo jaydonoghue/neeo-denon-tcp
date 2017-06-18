@@ -12,13 +12,15 @@ var AVR_PORT = '4097'
 
 
 const denonClient = new Denon.DenonClient(AVR_IP, AVR_PORT);
-denonClient.connect();
 
 
 /* Matrix Controller */
 
 module.exports.onButtonPressed = function onButtonPressed(name) {
     console.log(`[DENON CONTROLLER] ${name} button pressed`);
+
+    denonClient.connect();
+
     switch (name) {
         case "POWER ON":
             denonClient.setPower(Denon.Options.PowerOptions.On);
