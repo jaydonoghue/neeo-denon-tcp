@@ -1,0 +1,15 @@
+{
+  "name": "neeo-denon-avr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "denon-client": "github:lmoe/node-denon-client",
+    "neeo-sdk": "^0.38.2"
+  }
+}
