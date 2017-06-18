@@ -15,7 +15,7 @@ const denontcp = neeoapi.buildDevice('Denon AVR-2807 over TCP')
     .setManufacturer('Denon')
     .addAdditionalSearchToken('AVR')
     .addAdditionalSearchToken('2807')
-    .setType("ACCESSOIRE")
+    .setType("MEDIAPLAYER")
     //.setType('Matrix')
 
     // Capabilities of the device
